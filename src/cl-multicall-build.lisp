@@ -4,7 +4,8 @@
 
 ;; (system-name invoked-binary-name package-name entrypoint-name)
 (defparameter *systems* '((cl-multicall-build multicall-build cl-multicall-build build)
-                          (monolith monolith monolith main)
+                          (monolith monolith monolith monolith)
+                          ;; broken - i think breaks if you want to have multiple different invoked binary names in a single package
                           ;;(lightning-cd lightning lightning-cd main)
                           (mercury mercury mercury main)
                           ;;(graygoo graygoo graygoo main)
